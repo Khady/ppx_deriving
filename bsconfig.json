@@ -1,0 +1,18 @@
+// This is the configuration file used by BuckleScript's build system bsb. Its documentation lives here: http://bucklescript.github.io/bucklescript/docson/#build-schema.json
+// BuckleScript comes with its own parser for bsconfig.json, which is normal JSON, with the extra support of comments and trailing commas.
+{
+  "name": "ppx-deriving-runtime",
+  "version": "4.1.5",
+  "sources": [
+    {
+      "dir": "src",
+      "files": [
+        "ppx_deriving_runtime.ml",
+        "ppx_deriving_runtime.mli"
+      ]
+    }
+  ],
+  "bs-dependencies" : [
+  ],
+  "namespace": true
+}
