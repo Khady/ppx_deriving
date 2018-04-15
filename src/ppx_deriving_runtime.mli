@@ -1,3 +1,4 @@
+
 (** A module collecting all predefined OCaml types, exceptions and
     modules operating on them, so that ppx_deriving plugins operate
     in a well-defined environment. *)
@@ -92,7 +93,7 @@ module Weak : (module type of Weak with
 module Buffer : (module type of Buffer with
   type t := Buffer.t)
 module Result : sig
-  type ('a, 'b) result = ('a, 'b) Result.result =
+  type ('a, 'b) result =
     | Ok of 'a
     | Error of 'b
 end

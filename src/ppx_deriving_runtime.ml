@@ -1,3 +1,4 @@
+
 module Predef = struct
   type _int = int
   type _char = char
@@ -54,6 +55,8 @@ module Weak = Weak
 module Printf = Printf
 module Format = Format
 module Buffer = Buffer
-module Result = Result
+module Result = struct
+  type ('a, 'b) result = Ok of 'a | Error of 'b
+end
 
 include Pervasives
