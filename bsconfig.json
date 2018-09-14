@@ -13,6 +13,5 @@
     }
   ],
   "bs-dependencies" : [
-  ],
-  "namespace": true
+  ]
 }
